@@ -1,0 +1,25 @@
+.card-container {
+  perspective: 1000px; /* تأثير المنظور */
+}
+
+.card {
+  
+  position: relative;
+  transform-style: preserve-3d; /* للحفاظ على العمق عند الدوران */
+  transition: transform 0.6s; /* مدة التحول */
+}
+
+.card.flipped {
+  transform: rotateY(180deg); /* دوران 180 درجة */
+}
+
+.front, .back {
+  position: absolute;
+  
+  backface-visibility: hidden; /* إخفاء الوجه الآخر */
+  border-radius: 15px; /* زوايا مدورة */
+}
+
+.back {
+  transform: rotateY(180deg); /* وجه الخلفية مدور */
+}

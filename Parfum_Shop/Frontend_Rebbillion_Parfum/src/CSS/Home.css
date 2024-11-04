@@ -1,0 +1,121 @@
+
+  #customBackground {
+    background: linear-gradient(to right, #c3eae1 50%, transparent 50%);
+  }
+
+  #ItemsGiftsBackground {
+    background: linear-gradient(to left, #c3eae1 50%, transparent 50%);
+  } 
+  #Divgen{
+    background: linear-gradient(to right, #c3eae1 50%, transparent 50%);
+  }
+  
+  
+ 
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  
+  
+  .slide-in-right {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  .transition-opacity {
+    transition: opacity 0.3s ease;
+  }
+
+  @keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-right {
+    animation: slide-in-right 0.5s forwards;
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.5s forwards;
+}
+
+@keyframes slidein-left {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slidein-right {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.animateslide-in-left {
+  animation: slidein-left 0.5s forwards;
+}
+
+.animateslide-in-right {
+  animation: slidein-right 0.5s forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%); /* بدء الحركة من أعلى */
+    opacity: 0; /* إخفاء العنصر */
+  }
+  100% {
+    transform: translateY(0); /* انتهاء الحركة في مكانها الطبيعي */
+    opacity: 1; /* إظهار العنصر */
+  }
+}
+
